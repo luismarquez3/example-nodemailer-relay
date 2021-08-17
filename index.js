@@ -1,12 +1,11 @@
 const nodemailer = require('nodemailer');
-const smtpTransport = require('nodemailer-smtp-transport');
 
 //Ejemplo de envio de correo por smpt-relay de Google sin autenticación
-const destinatario  = '';
-const subject       = '';
-const contenido     = '';
+const destinatario  = 'luis.marquez@jalisco.gob.mx';
+const subject       = 'Prueba';
+const contenido     = 'Hola';
 
-const transport = nodemailer.createTransport(smtpTransport({
+const transport = nodemailer.createTransport({
     host: 'smtp-relay.gmail.com',
     port: 25,
     secure: false,
@@ -15,7 +14,7 @@ const transport = nodemailer.createTransport(smtpTransport({
         // do not fail on invalid certs
         rejectUnauthorized: false
       }
-}));
+});
 
 
 const mailOptions = {
