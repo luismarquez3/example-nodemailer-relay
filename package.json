@@ -1,0 +1,21 @@
+{
+  "name": "nodemailer-relay",
+  "version": "1.0.0",
+  "description": "Ejemplo nodemailer relay y simple",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "nodemailer",
+    "relay",
+    "gmail",
+    "smtp"
+  ],
+  "author": "Luis Marquez",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.6.3"
+  }
+}
