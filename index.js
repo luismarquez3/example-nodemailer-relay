@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 
 //Ejemplo de envio de correo por smpt-relay de Google sin autenticación
-const destinatario  = 'luis.marquez@jalisco.gob.mx';
+const destinatario  = 'your-email@domain.com';
 const subject       = 'Prueba';
 const contenido     = 'Hola';
 
